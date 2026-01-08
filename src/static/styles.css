@@ -90,13 +90,15 @@ section h3 {
 
 /* Bulleted list with nicely styled items */
 .participants-list {
-  list-style: disc inside;
+  list-style: none;
   margin: 6px 0 0 0;
   padding: 0;
 }
 
 .participants-list .participant {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: #eef3ff;
   color: #0b3b8a;
   padding: 6px 10px;
@@ -104,6 +106,28 @@ section h3 {
   margin: 6px 0;
   font-size: 0.95rem;
   border: 1px solid rgba(10, 40, 120, 0.06);
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  font-size: 12px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  padding: 0;
+  transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+  background: #c82333;
 }
 
 /* Small helper for empty state inside cards */
